@@ -1,0 +1,12 @@
+@use '@/styles/pxToRem' as *;
+@use '@/styles/display' as *;
+
+.about_me {
+  width: rem(1170);
+  padding-top: rem(100);
+  margin: 0 auto;
+
+  .map {
+    height: 100%;
+  }
+}
