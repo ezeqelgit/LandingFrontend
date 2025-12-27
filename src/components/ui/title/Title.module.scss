@@ -1,0 +1,29 @@
+@use '@/styles/pxToRem' as *;
+@use '@/styles/display' as *;
+
+.title {
+  width: rem(329);
+  height: rem(68);
+  border-radius: rem(15);
+  background: rgba(20, 20, 20, 1);
+  @extend .display-flex-column-center;
+  gap: rem(10);
+  position: relative;
+
+  .separator {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    border-radius: 0 rem(5) rem(5) 0;
+    background: rgba(255, 149, 0, 1);
+    width: rem(3);
+    height: rem(26);
+  }
+
+  .text {
+    @extend .display-flex-column-center;
+    gap: rem(10);
+    text-transform: uppercase;
+  }
+}
